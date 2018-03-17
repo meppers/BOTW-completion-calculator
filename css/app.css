@@ -1,0 +1,90 @@
+/*
+colors:
+tan: rgb(255,255,230)
+blue: rgb(2,254,229)
+red: rgb(243,69,92)
+*/
+
+@font-face {
+    font-family: "hylia";
+    src: url("/font/HyliaSerifBeta-Regular.otf") format("opentype");
+}
+
+h1 {
+    padding-bottom: 30px;
+    font-family: "hylia";
+    text-align: center;
+}
+
+body {
+    background-color: rgb(255, 255, 230);
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.callout {
+    background-color: rgba(0, 0, 0, 100);
+    border-radius: 30px;
+}
+
+label,
+.calloutText {
+    color: rgb(255, 255, 230);
+    font-weight: 700;
+}
+
+.disclamer {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.answer {
+    font-weight: 900;
+}
+
+.hiRed {
+    color: rgb(243, 69, 92);
+}
+
+.link {
+    color: rgb(2, 254, 229);
+}
+
+.rightAd {
+    min-width: 250px;
+}
+
+/*mobile only*/
+
+.large-12 {}
+
+/*end mobile only*/
+
+/*this is for revealing content on click*/
+
+.collapse {
+    display: block;
+}
+
+.collapse + input {
+    display: none;
+}
+
+.collapse + input + * {
+    display: none;
+}
+
+.collapse + input:checked + * {
+    display: block;
+}
+
+/*end of reveal content on click*/
