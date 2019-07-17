@@ -67,7 +67,7 @@
             <div class="callout">
                 <form action="<?php $_SERVER[" PHP_SELF "]; ?>" method="POST">
                     <label>
-                        This tool needs information that the game will not tell you until you beat the main story.
+                        This tool needs information the game will not tell you until you beat the main story.
                         <br><br>
                         What is the <span class="hiRed">completion percentage</span> shown on your map?
                     <input type="number" name="userComp" placeholder="00.00" step=".01" min="0.00" max="100.00">
@@ -82,8 +82,8 @@
                     <label class="collapse link" for="_1">Need Help?</label>
                     <input id="_1" type="checkbox">
                     <div class="calloutText">
-                        Number of seeds you have found: <br> <img src="/img/loadScreen.png" alt="korok seed counter location">
-                        <br><br> Completion percentage: <br> <img src="/img/mapSmall.jpg" alt="completion percentage location"> <br><br> The completion percentage on your map is only shown after you <span class="hiRed">beat the main story</span>.
+                        Number of seeds you have found: <br> <img src="/img/loadScreen.png" alt="korok seed counter location on game loading screen">
+                        <br><br> Completion percentage: <br> <img src="/img/mapSmall.jpg" alt="completion percentage location location on game map"> <br><br> The completion percentage on your map is only shown after you <span class="hiRed">beat the main story</span>.
                     </div>
                 </form>
             </div>
@@ -116,9 +116,9 @@
                 $usefulSeeds = ($_POST['userComp'] - ($_POST['userSeeds'] * $neededSeeds)) + 72; 
                 
                 echo "
-                <br> Completion minus seeds: <span class='answer hiRed'>$noSeeds%</span>
+                <br> Completion ignoring seeds: <span class='answer hiRed'>$noSeeds%</span>
                 <br> Completion with only 441 seeds: <span class='answer hiRed'>$usefulSeeds%</span><br>
-                <div class='disclamer'>You need 441 seeds to max out your inventory, the rest do virtually nothing.</div>
+                <div class='disclamer'>You only need 441 seeds to max out your inventory size, the rest do virtually nothing.</div>
                 ";
               
             } else {
