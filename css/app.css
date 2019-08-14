@@ -27,6 +27,7 @@ body {
 .callout {
     background-color: rgba(0, 0, 0, 100);
     border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 label,
@@ -64,13 +65,13 @@ label,
 }
 
 /*mobile only*/
-
-.large-12 {}
+.large-12 {
+    text-align: center;
+}
 
 /*end mobile only*/
 
 /*this is for revealing content on click*/
-
 .collapse {
     display: block;
 }
@@ -86,5 +87,4 @@ label,
 .collapse + input:checked + * {
     display: block;
 }
-
 /*end of reveal content on click*/
