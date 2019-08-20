@@ -19,7 +19,6 @@
             google_ad_client: "ca-pub-9435066537369577",
             enable_page_level_ads: true
         });
-
     </script>
 </head>
 
@@ -36,7 +35,6 @@
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-
     </script>
 
 
@@ -63,29 +61,29 @@
 
         </div>
         <br><br>
-        <div class="medium-5 columns">
+        <div class="medium-6 columns">
             <div class="callout">
-                    <label>
-                        This tool needs information the game will not tell you until you beat the main story.
-                        <br><br>
-                        What is the <span class="hiRed">completion percentage</span> shown on your map?
+                <label>
+                    This tool needs information the game will not tell you until you beat the main story.
+                    <br><br>
+                    What is the <span class="hiRed">completion percentage</span> shown on your map?
                     <input type="number" id="userComp" name="userComp" onkeyup="numEntered()" placeholder="00.00" step=".01" min="0.00" max="100.00">
                 </label>
-                    <label>
-                        How many <span class="hiRed">Korok seeds</span> do you have on the loading screen?
+                <label>
+                    How many <span class="hiRed">Korok seeds</span> do you have on the loading screen?
                     <input type="number" id="userSeeds" name="userSeeds" placeholder="000" min="0" max="900">
                 </label>
-                    <input type="submit" name="submit" id="submit" class="hollow button" value="Submit" onclick="doMath()" disabled>
+                <input type="submit" name="submit" id="submit" class="hollow button" value="Submit" onclick="doMath()" disabled>
 
-                    <!--Help images-->
-                    <label class="collapse link" for="_1">Need Help?</label>
-                    <input id="_1" type="checkbox">
-                    <div class="calloutText">
-                        Number of seeds you have found: <br> <img src="/img/loadScreen.png" alt="korok seed counter location on game loading screen">
-                        <br><br> Completion percentage: <br> <img src="/img/mapSmall.jpg" alt="completion percentage location location on game map"> <br><br> The completion percentage on your map is only shown after you <span class="hiRed">beat the main story</span>.
-                    </div>
+                <!--Help images-->
+                <label class="collapse link" for="_1">Need Help?</label>
+                <input id="_1" type="checkbox">
+                <div class="calloutText">
+                    Number of seeds you have found: <br> <img src="/img/loadScreen.png" alt="korok seed counter location on game loading screen">
+                    <br><br> Completion percentage: <br> <img src="/img/mapSmall.jpg" alt="completion percentage location location on game map"> <br><br> The completion percentage on your map is only shown after you <span class="hiRed">beat the main story</span>.
+                </div>
             </div>
-            
+
 
             <!--
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -99,48 +97,54 @@
             </script>
 -->
             <!--placeholder advert-->
-            <img src="https://via.placeholder.com/320x100" alt="">
-            <div class="disclamer">Advertisement</div>
-            
+            <div class="large-12 column">
+                <img src="https://via.placeholder.com/320x100" alt="">
+                <div class="disclamer">Advertisement</div>
+            </div>
+
             <br> Percent completed ignoring all seeds: <span class='answer hiRed' id="noSeeds"></span>
             <br> Percent completed with only 441 seeds: <span class='answer hiRed' id="usefulSeeds"></span><br>
-            <div class='disclamer'>You only need 441 seeds to max out your inventory size, the rest do virtually nothing.</div>
-            
-            
-            <!-- Calculator Logic -->
+            <div class='notice'>You only need 441 seeds to max out your inventory size, the rest do virtually nothing.</div>
+
+
+            <!-- Calculator functionality -->
             <script>
                 // disables submit button if completion % is not entered
-                function numEntered(){
-                    if(document.getElementById("userComp").value===""){
+                function numEntered() {
+                    if (document.getElementById("userComp").value === "") {
                         document.getElementById('submit').disabled = true;
                     } else {
                         document.getElementById('submit').disabled = false;
                     }
                 }
-
-                function doMath(){
+                // Calculator logic
+                function doMath() {
                     var percent = document.getElementById('userComp').value;
                     var seeds = document.getElementById('userSeeds').value;
+
+                    // multiply the number of user seeds by .08 to reveal completion % not counting any seeds
                     var noSeeds = ((percent - (seeds * .08)) + 72);
+                    // multiply user seeds by .163265306122449 to reveal completion % as if there were only 441 seeds in the game
                     var usefulSeeds = ((percent - (seeds * 0.163265306122449)) + 72);
+
                     document.getElementById("noSeeds").innerHTML = +noSeeds.toFixed(2);
                     document.getElementById("usefulSeeds").innerHTML = +usefulSeeds.toFixed(2);
-                    
+
                 }
             </script>
 
-                <br><br>
-                <!--share buttons-->
-                <div class="row">
-                    <div class="large-12 column">
-                        <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
-                        <br>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        <br>
-                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data size="small" data-show-faces="false" data-share="true"></div>
-                    </div>
+            <br><br>
+            <!--share buttons-->
+            <div class="row">
+                <div class="large-12 column">
+                    <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+                    <br>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <br>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data size="small" data-show-faces="false" data-share="true"></div>
                 </div>
+            </div>
         </div>
 
 
@@ -172,6 +176,4 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-</body>
-
-</html>
+</body></html>

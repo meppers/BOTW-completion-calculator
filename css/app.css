@@ -39,6 +39,12 @@ label,
 .disclamer {
     font-size: 10px;
     font-style: italic;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.notice {
+    font-size: 80%;
 }
 
 .footer {
@@ -87,4 +93,5 @@ label,
 .collapse + input:checked + * {
     display: block;
 }
+
 /*end of reveal content on click*/
