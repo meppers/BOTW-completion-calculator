@@ -7,7 +7,18 @@ red: rgb(243,69,92)
 
 @font-face {
     font-family: "hylia";
-    src: url("/font/HyliaSerifBeta-Regular.otf") format("opentype");
+    src: url("/font/HyliaSerifBeta-Regular.otf");
+}
+
+@font-face{
+    font-family: "calamity-bold";
+    src: url("/font/Calamity-Bold.woff");
+}
+
+@font-face{
+    font-family: "calamity";
+    src: url("/font/Calamity-Regular.woff");
+    
 }
 
 h1 {
@@ -18,6 +29,7 @@ h1 {
 
 body {
     background-color: rgb(255, 255, 230);
+    font-family: "calamity-bold";
 }
 
 .txtCenter {
@@ -37,6 +49,7 @@ label,
 }
 
 .disclamer {
+    font-family: "calamity";
     font-size: 10px;
     font-style: italic;
     margin-bottom: 15px;
@@ -44,6 +57,7 @@ label,
 }
 
 .notice {
+    font-family: "calamity";
     font-size: 80%;
 }
 
