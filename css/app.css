@@ -32,6 +32,10 @@ body {
     font-family: "calamity-bold";
 }
 
+.error {
+    color: rgb(243, 69, 92);
+}
+
 .txtCenter {
     text-align: center;
 }
