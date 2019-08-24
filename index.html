@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="theme-color" content="#000000">
-    <title>HATE SEEDS</title>
+    <meta name="description" content="Find out what your Breath of the Wild completion percentage is if you don't care about korok seeds">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BotW Calculator</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="shortcut icon" href="/img/korokSeed.png" />
+    <link rel="shortcut icon" href="/img/korokseed.png" />
 
     <!-- for google adsense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -43,26 +45,21 @@
             <h1>Breath of the Wild's real completion</h1>
         </div>
         <div class="large-12 show-for-small-only columns">
-            <!--
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-             Hate seeds: below submit button 
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:320px;height:100px"
-                 data-ad-client="ca-pub-9435066537369577"
-                 data-ad-slot="9717010841"></ins>
+
+            <!-- mobile only ad -->
+            <!-- <img src="http://via.placeholder.com/320x50" alt=""> -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- hate seeds: mobile top -->
+            <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-9435066537369577" data-ad-slot="1652753630"></ins>
             <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
--->
-            <!--        placeholder image-->
-            <img src="http://via.placeholder.com/320x50" alt="">
             <div class="disclamer">Advertisement</div>
-            <br><br>
 
         </div>
         <br><br>
         <div class="medium-6 columns">
-            <div class="callout">
+            <div class="callout entry">
                 <label>
                     This tool needs information the game will not tell you until you beat the main story.
                     <br><br>
@@ -79,10 +76,10 @@
                 <label class="collapse link" for="_1">Need Help?</label>
                 <input id="_1" type="checkbox">
                 <div class="calloutText">
-                    Completion percentage: <br> <img src="/img/mapSmall.jpg" alt="completion percentage location location on game map"> <br> 
+                    Completion percentage: <br> <img src="/img/mapsmall.jpg" alt="completion percentage location location on game map"> <br>
                     The completion percentage on your map is only shown after you <span class="hiRed">beat the main story</span>.
                     <br><br>
-                    Number of seeds you have found: <br> <img src="/img/loadScreen.png" alt="korok seed counter location on game loading screen">
+                    Number of seeds you have found: <br> <img src="/img/loadscreen.png" alt="korok seed counter location on game loading screen">
                 </div>
             </div>
 
@@ -100,7 +97,7 @@
             </div>
 
             <br> Percent completed ignoring all seeds: <span class='answer hiRed' id="noSeeds"></span>
-            <br> Percent completed with only 441 seeds: <span class='answer hiRed' id="usefulSeeds"></span><br>
+            <br> Percent completed if you want 441 seeds: <span class='answer hiRed' id="usefulSeeds"></span><br>
             <div class='notice'>You only need 441 seeds to max out your inventory size, the rest do virtually nothing.</div>
             <div class="error" id="error"></div>
 
@@ -128,14 +125,14 @@
                     document.getElementById("noSeeds").innerHTML = +noSeeds.toFixed(2);
                     document.getElementById("usefulSeeds").innerHTML = +usefulSeeds.toFixed(2);
 
-                    //warn the user of error if the result is below 0 or above 100%
+                    //warn the user of error if the result is below 0% or above 100%
                     if (noSeeds > 100) {
                         document.getElementById("error").innerHTML = "Your result shouldn't be above 100%, did you type something wrong?";
                     }
                     if (noSeeds < 0) {
                         document.getElementById("error").innerHTML = "Your result shouldn't be below 0%, did you type something wrong?";
                     } else {
-                        document.getElementById("error").innerHTML = "";
+                        document.getElementById("error").innerHTML = " ";
                     }
 
                 }

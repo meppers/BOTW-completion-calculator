@@ -10,15 +10,15 @@ red: rgb(243,69,92)
     src: url("/font/HyliaSerifBeta-Regular.otf");
 }
 
-@font-face{
+@font-face {
     font-family: "calamity-bold";
     src: url("/font/Calamity-Bold.woff");
 }
 
-@font-face{
+@font-face {
     font-family: "calamity";
     src: url("/font/Calamity-Regular.woff");
-    
+
 }
 
 h1 {
@@ -30,10 +30,8 @@ h1 {
 body {
     background-color: rgb(255, 255, 230);
     font-family: "calamity-bold";
-}
-
-.error {
-    color: rgb(243, 69, 92);
+    background-image: url(/img/bg.png);
+    background-repeat: repeat;
 }
 
 .txtCenter {
@@ -43,6 +41,10 @@ body {
 .callout {
     background-color: rgba(0, 0, 0, 100);
     border-radius: 30px;
+}
+
+.entry {
+    margin-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -76,7 +78,8 @@ label,
     font-weight: 900;
 }
 
-.hiRed {
+.hiRed,
+.error {
     color: rgb(243, 69, 92);
 }
 
