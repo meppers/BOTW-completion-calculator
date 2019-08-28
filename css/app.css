@@ -30,7 +30,7 @@ h1 {
 body {
     background-color: rgb(255, 255, 230);
     font-family: "calamity-bold";
-    background-image: url(img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: repeat;
 }
 
