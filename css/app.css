@@ -7,17 +7,17 @@ red: rgb(243,69,92)
 
 @font-face {
     font-family: "hylia";
-    src: url("/font/HyliaSerifBeta-Regular.otf");
+    src: url("../font/HyliaSerifBeta-Regular.otf");
 }
 
 @font-face {
     font-family: "calamity-bold";
-    src: url("/font/Calamity-Bold.woff");
+    src: url("../font/Calamity-Bold.woff");
 }
 
 @font-face {
     font-family: "calamity";
-    src: url("/font/Calamity-Regular.woff");
+    src: url("../font/Calamity-Regular.woff");
 
 }
 
@@ -30,7 +30,7 @@ h1 {
 body {
     background-color: rgb(255, 255, 230);
     font-family: "calamity-bold";
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: repeat;
 }
 
@@ -116,3 +116,7 @@ label,
 }
 
 /*end of reveal content on click*/
+
+
+
+
