@@ -7,17 +7,17 @@ red: rgb(243,69,92)
 
 @font-face {
     font-family: "hylia";
-    src: url("font/HyliaSerifBeta-Regular.otf");
+    src: url("../font/HyliaSerifBeta-Regular.otf");
 }
 
 @font-face {
     font-family: "calamity-bold";
-    src: url("font/Calamity-Bold.woff");
+    src: url("../font/Calamity-Bold.woff");
 }
 
 @font-face {
     font-family: "calamity";
-    src: url("font/Calamity-Regular.woff");
+    src: url("../font/Calamity-Regular.woff");
 
 }
 
