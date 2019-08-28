@@ -23,13 +23,13 @@ red: rgb(243,69,92)
 
 h1 {
     padding-bottom: 30px;
-    font-family: "hylia";
+    font-family: "hylia", sans-serif;
     text-align: center;
 }
 
 body {
     background-color: rgb(255, 255, 230);
-    font-family: "calamity-bold";
+    font-family: "calamity-bold", sans-serif;
     background-image: url(../img/bg.png);
     background-repeat: repeat;
 }
@@ -55,7 +55,7 @@ label,
 }
 
 .disclamer {
-    font-family: "calamity";
+    font-family: "calamity", sans-serif;
     font-size: 10px;
     font-style: italic;
     margin-bottom: 15px;
@@ -63,7 +63,7 @@ label,
 }
 
 .notice {
-    font-family: "calamity";
+    font-family: "calamity", sans-serif;
     font-size: 80%;
 }
 
